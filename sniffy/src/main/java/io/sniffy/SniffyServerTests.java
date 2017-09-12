@@ -1,6 +1,8 @@
 package io.sniffy;
 
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
@@ -13,6 +15,8 @@ import java.net.UnknownHostException;
 public class SniffyServerTests {
     SniffyAgent sa = new SniffyAgent();
     InetAddress ia = InetAddress.getLocalHost();
+    SniffyAgent.MyHandler m = new SniffyAgent.MyHandler();
+    String testResource = "www.testpage.html";
 
     public SniffyServerTests() throws UnknownHostException {}
 
@@ -24,7 +28,7 @@ public class SniffyServerTests {
 
     @Test
     public void testMIMETypes() throws IOException {
-        // add tests for MIME types
+        assertEquals("text/html", m.getMIMEType(testResource));
     }
 
 

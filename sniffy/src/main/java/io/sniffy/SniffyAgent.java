@@ -128,8 +128,7 @@ public class SniffyAgent {
             }
         }
 
-        public String getResourceName(String resourceName){return resourceName;}
-        public String getMIMEType(String type){return type;}
+        public String getMIMEType(String resourceName){return getMimeType(resourceName);}
 
         private String getMimeType(String resourceName) {
 
