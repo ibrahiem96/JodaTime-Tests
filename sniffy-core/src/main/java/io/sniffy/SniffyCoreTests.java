@@ -3,21 +3,33 @@ package io.sniffy;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
+import java.lang.ref.WeakReference;
+
+import static org.junit.jupiter.api.Assertions.*;
+
 public class SniffyCoreTests {
+
+    Sniffy s = new Sniffy();
+    Spy spy = new Spy();
+
+
     @Test
-    public void testOne(){
-        // TODO: assert that timer not null
-
-        // TODO: assert socket not null
-
-        // TODO: assert socket stats remove (add)
-
-        // TODO: spy iteration assertion
-
-        // TODO: assert if spy is null
-
-        // TODO: notify listeners assert - get id
-
+    public void testTimerStatsObjectAfterExecution(){
+        s.logSqlTime("WHERE", 10);
+        assertNotNull(s.getGlobalSqlStats());
     }
+
+    @Test
+    public void testTimerCountAfterExecution(){
+        s.logSqlTime("WHERE", 10);
+        assertNotEquals(11, s.getGlobalSqlStats());
+    }
+
+    @Test
+    public void testSpyObject(){
+        assertNotNull(s.getSpy(spy));
+    }
+
+
 
 }

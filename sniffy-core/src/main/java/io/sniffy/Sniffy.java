@@ -136,6 +136,10 @@ public class Sniffy {
         return globalSqlStats;
     }
 
+    public WeakReference<Spy> getSpy(Spy spy){
+        return registerSpy(spy);
+    }
+
     protected static WeakReference<Spy> registerSpy(Spy spy) {
         WeakReference<Spy> spyReference = new WeakReference<Spy>(spy);
         registeredSpies.add(spyReference);
