@@ -12,7 +12,6 @@ public class SniffyCoreTests {
     Sniffy s = new Sniffy();
     Spy spy = new Spy();
 
-
     @Test
     public void testTimerStatsObjectAfterExecution(){
         s.logSqlTime("WHERE", 10);
