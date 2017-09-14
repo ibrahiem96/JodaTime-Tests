@@ -1,0 +1,6 @@
+
+description = ''
+dependencies {
+  testCompile project(':sniffy-core')
+    testCompile group: 'org.spockframework', name: 'spock-core', version:'1.0-groovy-2.4'
+}

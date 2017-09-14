@@ -1,0 +1,9 @@
+
+description = ''
+dependencies {
+  compile project(':sniffy-test:sniffy-test-common')
+    compile group: 'org.testng', name: 'testng', version:'6.8.21'
+  testCompile project(':sniffy-test:sniffy-test-common')
+  testCompile project(':sniffy-core')
+}
+test.useTestNG()

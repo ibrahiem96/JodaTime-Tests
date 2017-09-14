@@ -1,0 +1,28 @@
+rootProject.name = 'sniffy-parent'
+include ':sniffy-core'
+include ':sniffy-web'
+include ':sniffy'
+include ':sniffy-test:sniffy-junit'
+include ':sniffy-test:sniffy-test-common'
+include ':sniffy-test:sniffy-testng'
+include ':sniffy-test:sniffy-spring-test'
+include ':sniffy-test'
+include ':sniffy-integration-tests:sniffy-integration-tests-spock'
+include ':sniffy-integration-tests:sniffy-integration-tests-spring-boot'
+include ':sniffy-integration-tests:sniffy-integration-test-tomcat'
+include ':sniffy-integration-tests'
+include ':sniffy-documentation'
+
+project(':sniffy-core').projectDir = "$rootDir/sniffy-core" as File
+project(':sniffy-web').projectDir = "$rootDir/sniffy-web" as File
+project(':sniffy').projectDir = "$rootDir/sniffy" as File
+project(':sniffy-test:sniffy-junit').projectDir = "$rootDir/sniffy-test/sniffy-junit" as File
+project(':sniffy-test:sniffy-test-common').projectDir = "$rootDir/sniffy-test/sniffy-test-common" as File
+project(':sniffy-test:sniffy-testng').projectDir = "$rootDir/sniffy-test/sniffy-testng" as File
+project(':sniffy-test:sniffy-spring-test').projectDir = "$rootDir/sniffy-test/sniffy-spring-test" as File
+project(':sniffy-test').projectDir = "$rootDir/sniffy-test" as File
+project(':sniffy-integration-tests:sniffy-integration-tests-spock').projectDir = "$rootDir/sniffy-integration-tests/sniffy-integration-tests-spock" as File
+project(':sniffy-integration-tests:sniffy-integration-tests-spring-boot').projectDir = "$rootDir/sniffy-integration-tests/sniffy-integration-tests-spring-boot" as File
+project(':sniffy-integration-tests:sniffy-integration-test-tomcat').projectDir = "$rootDir/sniffy-integration-tests/sniffy-integration-test-tomcat" as File
+project(':sniffy-integration-tests').projectDir = "$rootDir/sniffy-integration-tests" as File
+project(':sniffy-documentation').projectDir = "$rootDir/sniffy-documentation" as File
