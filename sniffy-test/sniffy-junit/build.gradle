@@ -1,8 +1,0 @@
-
-description = ''
-dependencies {
-  compile project(':sniffy-test:sniffy-test-common')
-    compile group: 'junit', name: 'junit', version:'4.12'
-  testCompile project(':sniffy-test:sniffy-test-common')
-  testCompile project(':sniffy-core')
-}

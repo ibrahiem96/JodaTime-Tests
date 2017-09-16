@@ -1,30 +1,51 @@
 Sniffy
-============
+Ibrahiem Mohammad
+Homework 1 - Java Project Setup
+Readme File
+===========================================================================================================================================================================================
 
-[![Quality Gate](https://sonarqube.com/api/badges/gate?key=io.sniffy:sniffy-parent)](https://sonarqube.com/dashboard?id=io.sniffy%3Asniffy-parent)
-[![Codacy Badge](https://api.codacy.com/project/badge/grade/ec48f442755f4df5b62bf3bcba3a2246)](https://www.codacy.com/app/sniffy/sniffy)
-[![CI Status](https://travis-ci.org/sniffy/sniffy.svg?branch=master)](https://travis-ci.org/sniffy/sniffy)
-[![Coverage Status](https://coveralls.io/repos/sniffy/sniffy/badge.png?branch=master)](https://coveralls.io/r/sniffy/sniffy?branch=master)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.sniffy/sniffy/badge.svg?style=flat)](https://maven-badges.herokuapp.com/maven-central/io.sniffy/sniffy)
-[![Download](https://api.bintray.com/packages/sniffy/sniffy/sniffy/images/download.svg) ](https://bintray.com/sniffy/sniffy/sniffy/_latestVersion)
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat)](http://badges.mit-license.org)
+This project contains many directories and many items, but for the purpose of this project we will focus on the following:
 
-Sniffy is a Java profiler which shows the results directly in your browser.
-It also brings profiling to your unit (or rather component) tests and allows you to disable certain outgoing connections for fault-tolerance testing.
+Sniffy Agent (Main file to be run): ibrahiem_mohammad_hw1\sniffy\src\main\java\io\sniffy\SniffyAgent.java
+Sniffy Server Tests (Test File): ibrahiem_mohammad_hw1\sniffy\src\main\java\io\sniffy\SniffyServerTests.java
+Sniffy Core Tests (Test File): ibrahiem_mohammad_hw1\sniffy-core\src\main\java\io\sniffy\io.sniffy.SniffyCoreTests.java
+
+Running the Project
+======================
+The Sniffy Project is a client-server application. It starts a server, and then allows clients to establish a connection to then 'sniff out' certain elements on a page and
+analayze which aspects of your web app or service are using which resources and how much. Usually the client side code is provided a GUI. However, for our sake, we will
+not include a GUI but simply establish a connection to the server and run the service.
+
+TO RUN:
+Simply go to the Sniffy Agent file [ibrahiem_mohammad_hw1\sniffy\src\main\java\io\sniffy\SniffyAgent.java] and run the file.
+
+Testing
+=========
+The tests made for this project are included in two different files. One suite tests certain aspects of the server connection, while the other suite
+tests the core functionality of the sniffy application.
+
+TO TEST:
+Go to either:
+Sniffy Server Tests: ibrahiem_mohammad_hw1\sniffy\src\main\java\io\sniffy\SniffyServerTests.java
+
+OR
+
+Sniffy Core Tests: ibrahiem_mohammad_hw1\sniffy-core\src\main\java\io\sniffy\io.sniffy.SniffyCoreTests.java
+
+And simply run the test files.
 
 
-![RecordedDemo](http://sniffy.io/demo.gif)
+Visual Analysis
+=================
 
-Live Demo - [http://demo.sniffy.io/](http://demo.sniffy.io/owners.html?lastName=)
+![alt text](images/jconsole-mem.png)
+![alt text](images/jconsole-overview.png)
+![alt text](images/memprofiler-server.png)
+![alt text](images/memsampler-server.png)
+![alt text](images/monitor-cpu.png)
+![alt text](images/tests-core.png)
+![alt text](images/tests-server.png)
+![alt text](images/threads-server.png)
+![alt text](images/visualgc.png)
 
-Documentation - [http://sniffy.io/docs/latest/](http://sniffy.io/docs/latest/)
 
-Support
-============
-Ask questions on stackoverflow with tag [sniffy](http://stackoverflow.com/questions/tagged/sniffy)
-
-Contribute
-============
-You are most welcome to contribute to Sniffy!
-
-Read the [instructions to build Sniffy](https://github.com/sniffy/sniffy/wiki/Building-Sniffy) and [contribution guidelines](https://github.com/sniffy/sniffy/blob/master/CONTRIBUTING.md)
