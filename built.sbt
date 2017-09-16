@@ -13,3 +13,5 @@ autoScalaLibrary := false
 libraryDependencies += "junit" % "junit" % "4.12"
 
 libraryDependencies += "com.novocode" % "junit-interface" % "0.10" % "test"
+
+testOptions += Tests.Argument(TestFrameworks.JUnit)

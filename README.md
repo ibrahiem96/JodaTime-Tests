@@ -30,3 +30,9 @@ Visual Analysis
 =================
 
 The visualgc and jconsole snapshots are found in ibrahiem_mohammad_hw1\images
+
+
+Limitations
+=================
+
+Gradle / SBT scripts are not properly configured
