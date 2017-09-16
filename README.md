@@ -7,8 +7,8 @@ Readme File
 This project contains many directories and many items, but for the purpose of this project we will focus on the following:
 
 Sniffy Agent (Main file to be run): ibrahiem_mohammad_hw1\sniffy\src\main\java\io\sniffy\SniffyAgent.java
-Sniffy Server Tests (Test File): ibrahiem_mohammad_hw1\sniffy\src\main\java\io\sniffy\SniffyServerTests.java
-Sniffy Core Tests (Test File): ibrahiem_mohammad_hw1\sniffy-core\src\main\java\io\sniffy\io.sniffy.SniffyCoreTests.java
+Sniffy Server Tests (Test File): ibrahiem_mohammad_hw1\src\tests\java\SniffyServerTests.java
+Sniffy Core Tests (Test File): ibrahiem_mohammad_hw1\src\tests\java\SniffyCoreTests.java
 
 Running the Project
 ======================
@@ -21,31 +21,12 @@ Simply go to the Sniffy Agent file [ibrahiem_mohammad_hw1\sniffy\src\main\java\i
 
 Testing
 =========
-The tests made for this project are included in two different files. One suite tests certain aspects of the server connection, while the other suite
-tests the core functionality of the sniffy application.
 
-TO TEST:
-Go to either:
-Sniffy Server Tests: ibrahiem_mohammad_hw1\sniffy\src\main\java\io\sniffy\SniffyServerTests.java
-
-OR
-
-Sniffy Core Tests: ibrahiem_mohammad_hw1\sniffy-core\src\main\java\io\sniffy\io.sniffy.SniffyCoreTests.java
-
-And simply run the test files.
+sbt: sbt clean compile test
+gradle: gradle test
 
 
 Visual Analysis
 =================
 
-![alt text](images/jconsole-mem.png)
-![alt text](images/jconsole-overview.png)
-![alt text](images/memprofiler-server.png)
-![alt text](images/memsampler-server.png)
-![alt text](images/monitor-cpu.png)
-![alt text](images/tests-core.png)
-![alt text](images/tests-server.png)
-![alt text](images/threads-server.png)
-![alt text](images/visualgc.png)
-
-
+The visualgc and jconsole snapshots are found in ibrahiem_mohammad_hw1\images
